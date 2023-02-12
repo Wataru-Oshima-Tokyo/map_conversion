@@ -10,21 +10,21 @@ Usage
 
 ### Run the ROS master node by using the following command:
 Copy code
-'''
+```
 roscore
-'''
+```
 
 
 ### Run a map_server node that will publish the map data. For example:
 Copy code
-'''
+```
 rosrun map_server map_server {path_to_map}
-'''
+```
 ### Run the .py script to start the map conversion:
 Copy code
-'''
-rosrun map_conversion 
-'''
+```
+rosrun map_conversion convert_rviz_to_pygamemap.py
+```
 Components
 The code consists of two ROS subscribers:
 
