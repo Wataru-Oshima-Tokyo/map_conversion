@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Map Conversion</title>
   </head>
   <body>
     <h1>Map Conversion</h1>
@@ -22,10 +21,10 @@
         <code>roscore</code>
       </li>
       <li>Launch a ROS node that will publish the map data. For example:<br>
-        <code>rosrun gmapping slam_gmapping</code>
+        <code>rosrun map_server map_server {path_to_map}</code>
       </li>
-      <li>Run the map_conversion.py script to start the map conversion:<br>
-        <code>python map_conversion.py</code>
+      <li>Run the convert_amcl_pose_to_map_coordinate.pyscript to start the map conversion:<br>
+        <code>rosrun  map_conversion convert_amcl_pose_to_map_coordinate.py</code>
       </li>
     </ol>
     <h2>Components</h2>
