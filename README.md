@@ -1,19 +1,20 @@
-Map Conversion
+### Map Conversion
 This code converts the OccupancyGrid messages, which represent the map data in Rviz, to a 2D numpy array and processes the data to convert it to Pygame coordinates. The code then initializes Pygame, draws the map on the Pygame screen, and runs the main loop to display the map.
 
-Requirements
+## Requirements
 Python 2.7 or above
 ROS (Robot Operating System)
 Pygame
 Numpy
 Usage
-Run the ROS master node by using the following command:
+
+# Run the ROS master node by using the following command:
 Copy code
-roscore
-Launch a ROS node that will publish the map data. For example:
+    roscore
+# Run a map_server node that will publish the map data. For example:
 Copy code
-rosrun gmapping slam_gmapping
-Run the map_conversion.py script to start the map conversion:
+    rosrun map_server map_server {path_to_map}
+# Run the .py script to start the map conversion:
 Copy code
 python map_conversion.py
 Components
