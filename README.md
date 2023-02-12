@@ -10,7 +10,7 @@ Usage
 
 # Run the ROS master node by using the following command:
 Copy code
-    roscore
+        roscore
 # Run a map_server node that will publish the map data. For example:
 Copy code
     rosrun map_server map_server {path_to_map}
